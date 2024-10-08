@@ -1009,7 +1009,7 @@ margin: 70px 0px 0px 0px;
 /* ########################################################################################################    */
 
 /* For small mobile devices */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 376px) {
     .text-for {
         margin: 7%;
         font-size: 30px;
@@ -1178,13 +1178,13 @@ margin: 70px 0px 0px 0px;
 
     .contact-lft-input {
         height: 55px;
-        width: 290px;
+        width: 340px;
 
     }
 
     .contact-lft-msg {
         height: 150px;
-        width: 290px;
+        width: 340px;
     }
 
     /* footer  */
