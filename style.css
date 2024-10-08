@@ -1,0 +1,1235 @@
+:root {
+    --desk-margin: 50px 150px 50px 150px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #0a101e;
+    margin: 0%;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.text-head {
+
+    display: flex;
+    justify-content: center;
+}
+
+.text-for {
+    margin: 100px 25%;
+    font-size: 50px;
+    padding: 10px;
+    color: #fec544;
+    transition: all 0.7s ease-in;
+}
+
+.text-head:hover .text-for {
+
+    text-shadow:
+        0px 0px 1.5px rgba(255, 215, 0, 0.2),
+        0px 0px 3.0px rgba(192, 192, 192, 0.4),
+        0px 0px 4.5px rgba(220, 20, 60, 0.6),
+        0px 0px 6.0px rgba(80, 200, 120, 0.8),
+        0px 0px 7.5px rgba(142, 69, 133, 10);
+    box-shadow: 0px 0px 5px 5px #050dff;
+    border-radius: 15px;
+}
+
+
+/* header */
+/* /* Default style for larger screens */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.main-header {
+    z-index: 1000;
+    margin: var(--desk-margin);
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-out forwards; 
+}
+
+.header {
+    padding: 15px 15px;
+    display: flex;
+    background-color: #0a101e;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #16337a;
+}
+
+.logo {
+    margin: 5px 30px 0px 0px;
+}
+
+.menu-text {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 5px 0px 0px 25px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.menu-text:hover {
+    color: #FEC544;
+    text-decoration: underline;
+}
+
+.menu-text:active {
+    color: aqua;
+}
+
+
+
+.no {
+    font-size: 17px;
+    margin: 0px 8px;
+    color: #FEC544;
+}
+
+/* home */
+.home {
+    background-image: url('../pics/pexels-felixmittermeier-957061.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-attachment: fixed;
+    padding: 150px 0px 0px 9px;
+    margin-bottom: 100px;
+}
+
+.home-lft {
+    margin-top: 3%;
+}
+
+.home-lft1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fec544;
+    margin-bottom: 15px;
+}
+
+.home-lft2 {
+    font-size: 120px;
+    font-weight: 900;
+    color: #fdfeff;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.home-lft3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #a9adb8;
+}
+
+.home-lft4 {
+    background-color: #fec544;
+    color: #070d1b;
+    padding: 15px 50px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+.home-lft4:hover{
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    box-shadow: 0px 0px 10px #fdbc22;
+
+}
+
+.home-rgt-pic {
+    filter: drop-shadow(0 0 10px rgba(0, 106, 255, 0.5));
+}
+
+/* about  ##############################################*/
+
+/* .about-head */
+.about-head {
+    justify-content: center;
+    text-align: center;
+}
+
+/* about-info */
+.about-lft-img {
+    height: 480px;
+    width: 510px;
+}
+
+.about-rgt {
+    padding: 0px 0px 0px 75px;
+    line-height: 0.7cm;
+}
+
+.about-rgt1 {
+    font-size: 36px;
+}
+
+.about-rgt2 {
+    color: #FEC544;
+    font-size: 24px;
+}
+
+.about-rgt3 {
+    color: #a9adb8;
+    font-size: 17px;
+}
+
+.about-rgt4 {
+    color: #a9adb8;
+    line-height: 0.8cm;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+.about-rgt5 {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #070d1b;
+    background-color: #FEC544;
+}
+
+/* service */
+.service-head {
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* service-box */
+
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: var(--desk-margin);
+}
+
+.service-inbox {
+    width: 30%;
+    padding: 25px;
+    margin: 15px 10px;
+    background-color: #192e6743;
+    color: #c9cee7c6;
+    border-radius: 20px;
+    transition: all 0.7s;
+}
+
+.servic-pic {
+    height: 100px;
+    /* width: 50px; */
+    padding: 20px;
+    border-radius: 25px;
+    margin: 15px 2px;
+    transition: all 0.7s;
+}
+
+.service-h3 {
+    font-size: 20px;
+    color: #c9cee7c6;
+    transition: all 0.7s;
+}
+
+.service-inbox:hover {
+    box-shadow: 0px 0px 15px #2a55c3;
+}
+
+.service-inbox:hover .service-h3 {
+    color: #fec544;
+}
+
+.service-inbox:hover .servic-pic {
+    background-color: #a94572a8;
+}
+
+/* resume */
+.resume-head {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.resume-info {
+    display: flex;
+    margin: 70px 200px 0px 200px;
+}
+
+.resume-rgt {
+    margin: 0px 0px 0px 9px;
+}
+
+.resume-img {
+    height: 80px;
+}
+
+.resume-icon {
+    display: flex;
+    margin: 0px 0px 30px 0px;
+}
+
+.resume-icon-txt {
+    font-size: 30px;
+    margin: 15px 0px 0px 15px;
+    font-weight: 400;
+}
+
+.resume-info1 {
+    font-size: 24px;
+    color: #FEC544;
+    margin: 0px 0px 8px 95px;
+    font-weight: 600;
+}
+
+.resume-info2 {
+    font-size: 21px;
+    color: #a9adb8;
+    margin: 0px 0px 18px 95px;
+}
+
+.resume-info3 {
+    font-size: 20px;
+    color: aliceblue;
+    margin: 0px 0px 19px 95px;
+    font-weight: 600;
+}
+
+.resume-info4 {
+    font-size: 16px;
+    color: #a9adb8;
+    margin: 0px 0px 70px 95px;
+}
+
+/* portfolio */
+.port-content {
+    margin: 50px 190px 0px 190px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.port-image {
+    position: relative;
+    width: 27%;
+    height: 350px;
+    margin: 20px auto;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid #423434;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.port-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.port-image:hover {
+    box-shadow: 0px 0px 10px #c3c8d5;
+}
+
+.port-image:hover .port-img {
+    transform: scale(1.2);
+    filter: grayscale(10%);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.port-img-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.682);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.port-image:hover .port-img-content {
+    opacity: 1;
+}
+
+.pluse {
+    color: #fec544;
+    font-size: 69px;
+}
+
+.port-img-txt1 {
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.port-img-txt2 {
+    font-size: 16px;
+    color: #a9adb8;
+}
+
+.port-button {
+    margin: 0% 0% 0% 45%;
+    text-decoration: none;
+    background-color: #FEC544;
+    color: #070d1b;
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+/* reviews */
+.reviews {
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews-box {
+    margin: 5px;
+    width: 32%;
+}
+
+.reviews-top {
+    transition: all 0.8s;
+    background-image: url(../pics/quate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 440px;
+    padding: 30px 50px;
+}
+
+.reviews-bottom {
+    text-align: center;
+    margin: 20px 10px 0px 0px;
+}
+
+.review-info1 {
+    font-size: 20px;
+    color: aliceblue;
+    margin: 0%;
+    transition: all 0.8s;
+}
+
+.review-info2 {
+    font-size: 16px;
+    color: #a9adb8;
+    margin: 0%;
+}
+
+.review-img {
+    transition: all 0.8s;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.reviews-box:hover .reviews-top {
+    filter: drop-shadow(0 0 2px #FEC544);
+}
+
+.reviews-box:hover .review-info1 {
+    color: #fec544;
+}
+
+.reviews-box:hover .review-img {
+    border: 2px solid #FEC544;
+    border-radius: 50px;
+    padding: 0px;
+}
+
+/* contact############################################################### */
+.contact-head {
+    display: flex;
+}
+
+.contact-lft {
+    margin: 0% 0.2% 0% 0%;
+    width: 90%;
+}
+
+.contact-lft-h {
+    margin: 1px 1px 15px 1px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact-lft-input {
+    height: 55px;
+    width: 584px;
+    padding: 0px 7px;
+    margin: 15px 0px;
+    border-radius: 7px;
+    font-size: 17px;
+    background-color: #101624;
+    border: 1px solid #232935;
+    color: #a9adb8;
+}
+
+.contact-lft-msg {
+    height: 150px;
+    width: 584px;
+    border-radius: 7px;
+    font-size: 17px;
+    padding: 10px 7px;
+    margin: 20px 0px;
+    background-color: #101624;
+    border: 1px solid #232935;
+    color: #a9adb8;
+}
+
+.contact-rgt-h {
+    color: #a9adb8;
+    font-size: 17px;
+}
+
+.contact-rgt {
+    margin: 0px 0px 0px 20px;
+
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-img {
+    height: 60px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.7s;
+}
+
+.contact-info1 {
+    font-size: 20px;
+    color: aliceblue;
+    margin: 0px 0px 5px 20px;
+    font-weight: 600;
+    transition: all 0.7s;
+}
+
+.contact-info2 {
+    font-size: 16px;
+    color: #a9adb8;
+    margin: 0px 0px 40px 20px;
+}
+
+.contact-info:hover .contact-img {
+    border: 2px double #fec544;
+}
+
+.contact-info:hover .contact-info1 {
+    color: #FEC544;
+}
+
+/* footer */
+.footer {
+    background-color: #070d1b;
+    align-content: center;
+    text-align: center;
+}
+
+.footer-txt {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FEC544;
+    transition: all 0.5s;
+}
+
+.footer:hover .footer-txt {
+    font-size: 20px;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-l {
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.footer-logo {
+    height: 30px;
+    padding: 7px 5px 0px 7px;
+}
+
+.footer-logo-txt {
+    font-size: 17px;
+    opacity: 0;
+    width: 0px;
+    font-weight: 450;
+    transition: all 0.7s ease;
+}
+
+.footer-l:hover {
+    border: 1px solid #FEC544;
+    padding: 2px;
+}
+
+.footer-l:hover .footer-logo-txt {
+    opacity: 1;
+    width: 90px;
+    padding: 10px 0px 0px 0px;
+}
+/* ######################################################################################### */
+@media only screen and (max-width: 1201px) {
+    .main-header{
+    margin: 15px 0px 15px 120px;
+    }
+.home-rgt-pic {
+height: auto;
+width: 400px;
+margin: 70px 0px 0px 0px;
+}
+}
+
+
+/* ###################################################################################################### */
+/* For tablets and smaller screens */
+@media only screen and (max-width: 992px) {
+    
+    /* .home */
+    .main-header {
+    margin: 25px 0px 0px 150px ;
+
+
+        padding: 10px 0px 0px 0px;
+    }
+
+    .header {
+        padding: 2px 15px 2px 15px;
+    }
+
+    .logo {
+        margin: 0px 250px 0px 10px;
+    }
+
+    .bar {
+        margin: 10px 15px;
+    }
+
+    .navbar-toggler {
+        margin: 7px 10px;
+        padding: 15px 0px;
+    }
+
+    .home {
+        padding: 100px 0px 0px 9px;
+
+    }
+
+    .home-rgt-pic {
+        display: none;
+    }
+
+    /* .about */
+
+
+    .about-rgt {
+        margin: 15px 0px 0px 15px;
+    }
+
+    .about-rgt5 {
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    /* service  */
+    .service-box {
+        margin: 25px 100px;
+    }
+
+    .service-inbox {
+        width: 45%;
+    }
+
+    /* resume  */
+
+    .resume-info {
+        margin: 50px 25px;
+    }
+
+    .resume-info1,
+    .resume-info2,
+    .resume-info3 {
+        margin: 0px 0px 15px 25px;
+    }
+
+    .resume-info4 {
+        margin: 0px 0px 70px 25px;
+
+    }
+
+    /* portfolio */
+    .port-content {
+        margin: 50px auto;
+        margin-bottom: 0px;
+    }
+
+    .port-image {
+        width: 47%;
+    }
+
+    .port-button {
+        margin: 0% 0% 0% 41.5%;
+    }
+
+    /* reviews  */
+    .reviews {
+        margin: 100px auto;
+        justify-content: center;
+    }
+
+    .reviews-box {
+        width: 48%;
+    }
+
+}
+
+
+/* contact  */
+.contact-lft-input {
+    height: 55px;
+    width: 100%;
+}
+
+.contact-lft-msg {
+    height: 150px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############################################################################################### */
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+    .text-for {
+        margin: 7% ;
+    }
+
+
+
+    /* .home */
+    .main-header {
+        padding: 10px 0px 0px 0px;
+        margin: 15px 120px;
+    }
+
+    .header {
+        padding: 2px auto;
+    }
+
+    /* .about */
+
+
+    .about-rgt {
+        padding: 0px 50px;
+    }
+
+
+    /* service  */
+    .service-box {
+        margin: 30px 40px;
+    }
+
+    .service-inbox {
+        width: 45%;
+    }
+
+    /* resume  */
+    .resume-info {
+        margin: 50px 0px;
+    }
+
+    .resume-info1,
+    .resume-info2,
+    .resume-info3 {
+        margin: 0px 0px 5px 10px;
+    }
+
+    .resume-info4 {
+        margin: 0px 0px 50px 10px;
+
+    }
+
+    /* portfolio */
+    .port-image {
+        width: 48%;
+        height: 300px;
+    }
+
+    .port-button {
+        margin: 0% 0% 0% 39%;
+    }
+
+    /* reviews  */
+    .reviews {
+        margin: 100px auto;
+        justify-content: center;
+    }
+
+    .reviews-box {
+        width: 98%;
+    }
+
+    .reviews-top {
+        padding-bottom: 60px;
+    }
+
+    .reviews-p {
+        padding: 0px 7px;
+        margin: 7px;
+    }
+
+    /* contact  */
+
+    .contact-head {
+        display: block;
+
+    }
+
+    .contact-lft-input {
+        height: 55px;
+        width: 100%;
+    }
+
+    .contact-lft-msg {
+        height: 150px;
+        width: 100%;
+    }
+
+    .contact-rgt {
+        margin: 0px;
+
+    }
+
+
+
+
+
+
+
+
+}
+
+/* ########################################################################################################    */
+
+/* For small mobile devices */
+@media only screen and (max-width: 576px) {
+    .text-for {
+        margin: 7%;
+        font-size: 35px;
+    }
+
+
+
+    /* header */
+    .main-header {
+        margin: 7px 15px;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .header {
+        margin: 0px 80px;
+        padding: 2px 0px 2px 15px;
+        padding: 0% 5%;
+    }
+
+    .logo {
+        margin: 0px 100px 0px 10px;
+    }
+
+    .bar {
+        margin: 10px 15px;
+    }
+
+    .navbar-toggler {
+        margin: 7px auto;
+        padding: 15px auto;
+    }
+
+
+    /* home  */
+    .home-lft2 {
+        font-size: 100px;
+    }
+
+    /* .about */
+
+
+    .about-rgt {
+        padding: 0px 30px;
+    }
+
+    .about-lft-img {
+        width: 480px;
+    }
+
+    /* service  */
+    .service-box {
+        margin: 30px 40px;
+    }
+
+    .service-inbox {
+        width: 100%;
+    }
+
+    .s-box {
+        direction: ltr;
+    }
+
+    /* resume  */
+    .resume-info1,
+    .resume-info2,
+    .resume-info3 {
+        margin: 0px 0px 5px 25px;
+    }
+
+    .resume-info4 {
+        margin: 0px 0px 50px 25px;
+
+    }
+
+    /* portfolio */
+    .port-image {
+        width: 48%;
+        height: 300px;
+    }
+
+    .port-button {
+        margin: 0% 0% 0% 39%;
+    }
+
+    /* reviews  */
+    .reviews {
+        margin: 100px auto;
+        justify-content: center;
+    }
+
+    .reviews-box {
+        width: 98%;
+    }
+
+    .reviews-top {
+        padding-bottom: 60px;
+    }
+
+    .reviews-p {
+        padding: 0px 0px;
+        margin: 10px 10px 10px 20px;
+        width: 370px;
+    }
+
+    /* contact  */
+
+
+
+    .contact-lft-input {
+        height: 55px;
+        width: 515px;
+    }
+
+    .contact-lft-msg {
+        height: 150px;
+        width: 515px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ########################################################################################################    */
+
+/* For small mobile devices */
+@media only screen and (max-width: 376px) {
+    .text-for {
+        margin: 7%;
+        font-size: 30px;
+    }
+
+
+
+    /* header */
+
+    .menu-text {
+        margin: 2px 0px 0px 25px;
+        font-size: 14px;
+    }
+
+    .main-header {
+        margin: 5px 10px;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .header {
+        margin: 0px 35px 0px 0px;
+
+        padding: 0% 5%;
+    }
+
+    .logo {
+        width: auto;
+        height: 20px;
+        margin: 0px 115px 0px 10px;
+    }
+
+    .bar {
+        margin: 5px 10px;
+    }
+
+    .navbar-toggler {
+        margin: 7px 0px;
+        padding: 15px auto;
+    }
+
+
+    /* home  */
+
+    .home-lft1 {
+        font-size: 20px;
+        margin-top: 70px;
+    }
+
+    .home-lft2 {
+        font-size: 50px;
+        margin-top: 30px;
+
+    }
+
+    .home-lft3 {
+        font-size: 26px;
+    }
+
+    /* .about */
+
+
+    .about-rgt {
+        padding: 0px 5px;
+    }
+
+    .about-rgt2 {
+        font-size: 20px;
+    }
+
+    .about-rgt3 {
+        font-size: 14px;
+    }
+
+    .about-rgt4 {
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    .about-rgt5 {
+        font-size: 12.5px;
+        padding: 10px 15px;
+    }
+
+    .about-lft-img {
+        width: 280px;
+        height: auto;
+    }
+
+    /* service  */
+    .service-box {
+        margin: 0px;
+    }
+
+    .service-inbox {
+        width: 100%;
+        margin: 15px 0px;
+    }
+
+
+    /* resume  */
+    .resume-info {
+        display: block;
+    }
+
+    .resume-icon {
+        justify-content: center;
+    }
+
+    .resume-info1 {
+        font-size: 20px;
+        margin: 0px 0px 5px 25px;
+    }
+
+    .resume-info2 {
+        font-size: 18px;
+        margin: 0px 0px 5px 25px;
+    }
+
+    .resume-info3 {
+        font-size: 16.5px;
+        margin: 0px 0px 5px 25px;
+    }
+
+    .resume-info4 {
+        font-size: 12px;
+        margin: 0px 0px 50px 25px;
+
+    }
+
+    /* portfolio */
+    .port-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .port-button {
+        margin: 0% 0% 0% 22%;
+    }
+
+    /* reviews  */
+    .reviews {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .reviews-box {
+        width: 98%;
+    }
+
+    .reviews-top {
+        padding: 20px 0px 50px 0px;
+    }
+
+
+    .reviews-p {
+        font-size: 15px;
+        padding: 0px 0px;
+        margin: 10px;
+        width: 270px;
+    }
+
+    /* contact  */
+
+
+
+    .contact-lft-input {
+        height: 55px;
+        width: 340px;
+
+    }
+
+    .contact-lft-msg {
+        height: 150px;
+        width: 340px;
+    }
+
+    /* footer  */
+    .footer-txt {
+        font-size: 13px;
+    }
+
+    .footer:hover .footer-txt {
+        font-size: 15px;
+    }
+
+    .footer-l {
+        padding: 0px 5px;
+    }
+
+    .footer-l:hover .footer-logo-txt {
+        opacity: 1;
+        width: 60px;
+        padding: 3px 0px 0px 0px;
+    }
+
+    .footer-logo {
+        height: 20px;
+        padding: 3px 5px 0px 7px;
+    }
+
+    .footer-logo-txt {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
